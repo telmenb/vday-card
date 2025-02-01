@@ -1,5 +1,7 @@
-<script lang='ts'>
+<script lang="ts">
   import Query from "./Query.svelte";
+  import Confetti from "./Confetti.svelte";
+	import Confirmation from "./Confirmation.svelte";
 
   let clickedYes = $state(false);
 
@@ -11,5 +13,6 @@
 {#if !clickedYes}
   <Query {yesClicked} />
 {:else}
-  <p>let's goo!</p>
+  <Confetti />
+  <Confirmation />
 {/if}

@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
   import { fly } from 'svelte/transition';
 	import jumpBear from '$lib/jump-bear.gif';
 
@@ -11,7 +11,6 @@
     await new Promise(resolve => resolve(showHuh = false));
     clickedNo = true;
   }
-
 </script>
 
 <h1 class="text-4xl font-semibold font-serif">Cecylia!</h1>
