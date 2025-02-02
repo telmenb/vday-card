@@ -1,8 +1,9 @@
 <script lang="ts">
   import spinBears from '$lib/spin.gif';
+  let { setClickedYes } = $props();
 </script>
 
-<h1 class="text-4xl font-semibold font-serif mb-3">Yay! 🥳🎉</h1>
+<h1 class="text-4xl font-semibold font-serif mb-3">Great! 🥳🎉</h1>
 <img
   src={spinBears}
   alt="Mocha Bear Spinning Around Another Bear In the Air"
@@ -14,3 +15,9 @@
   <a class="text-pink-700" href="https://maps.app.goo.gl/xGxkxDy5bV6dtZpDA">Seven Saints</a>
   in Downtown Champaign
 </p>
+<a
+  onclick={() => setClickedYes(false)}
+  class="mt-0.5 text-pink-700 text-sm cursor-pointer"
+>
+  [go back]
+</a>

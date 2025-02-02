@@ -1,4 +1,6 @@
-# sv
+# V-Day Card
+
+[idea](https://www.tiktok.com/@mewtru/video/7331131143112166698?lang=en)
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 

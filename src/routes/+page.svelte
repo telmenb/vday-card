@@ -5,14 +5,14 @@
 
   let clickedYes = $state(false);
 
-  function yesClicked() {
-    clickedYes = true;
+  function setClickedYes(bool: boolean) {
+    clickedYes = bool;
   }
 </script>
 
 {#if !clickedYes}
-  <Query {yesClicked} />
+  <Query {setClickedYes} />
 {:else}
   <Confetti />
-  <Confirmation />
+  <Confirmation {setClickedYes} />
 {/if}

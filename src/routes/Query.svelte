@@ -2,7 +2,7 @@
   import { fly } from 'svelte/transition';
 	import jumpBear from '$lib/jump-bear.gif';
 
-  let { yesClicked } = $props();
+  let { setClickedYes } = $props();
   let clickedNo = $state(false);
   let showHuh = $state(false);
 
@@ -26,7 +26,7 @@
 <div class ="flex mt-2">
   <button
     class="mx-2 px-4 py-2 bg-pink-500 text-white rounded-md"
-    onclick={yesClicked}
+    onclick={() => setClickedYes(true)}
   >
     Yes
   </button>
