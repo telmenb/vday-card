@@ -2,7 +2,7 @@
   import spinBears from '$lib/spin.gif';
 </script>
 
-<h1 class="text-4xl font-semibold font-serif mb-3">Great! 😁</h1>
+<h1 class="text-4xl font-semibold font-serif mb-3">Yay! 🥳🎉</h1>
 <img
   src={spinBears}
   alt="Mocha Bear Spinning Around Another Bear In the Air"
